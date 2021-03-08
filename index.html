@@ -6,14 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final DIW</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Prata" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
-    
-    <header>
-        <h1>Hola Mundo!</h1>
-    </header>
-    <main></main>
+
+        <!-- Banner y logos -->
+
+        <header class="logos-menu mt-3">
+
+            <div>
+                <a href="#"><img width="40px" height="27px" src="img/spanish.png"></a>
+                <a href="#"><img width="40px" height="27px" src="img/english.png"></a>
+            </div>
+            
+            <img src="img/logo.jpg">
+
+            <div class="redes-sociales">
+                <a href="#"><img width="30px" height="30px" src="img/facebook.png"></a>
+                <a href="#"><img width="30px" height="30px" src="img/twitter.png"></a>
+                <a href="#"><img width="30px" height="30px" src="img/pinterest.png"></a>
+                <a href="#"><img width="30px" height="30px" src="img/instagram.png"></a>
+                <a href="#"><img width="30px" height="30px" src="img/youtube.png"></a>
+            </div>
+
+        </header>
+
+        <!-- Menu Sticky -->
+
+        <div class="container-fluid sticky-top mt-3 menu-navegacion">
+            <div class="row justify-content-center">
+                <div class="col-6 mt-2">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent justify-content-center">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav mx-auto menunavbar">
+                                    <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#">Servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#">Quién soy</a>
+                                    </li>       
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#">Trabajos</a>
+                                    </li>
+                                    <div class="col">
+                                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Contacto</button>
+                                    </div>
+                                </ul>
+                                </div>
+                            </div>
+                        </nav>
+                </div>
+            </div>
+      </div>
+
+      <!-- Modal con el formulario de contacto -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacte con nosotros</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label for="nombreform" class="form-label">Nombre</label>
+                <input type="text" name="nombreform" id="nombreform" class="form-control"><br>
+                <label for="nombreform" class="form-label">Email</label>
+                <input type="email" name="nombreform" id="nombreform" class="form-control"><br>
+                <label for="mensajeform" class="form-label">Mensaje</label>
+                <textarea class="form-control" placeholder="Escribe aquí su mensaje" id="floatingTextarea"></textarea><br>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <main>
+
+        <div class="container mt-5 descripcion">
+            <img src="img/fotodesc.png">
+            <div class="texto">
+                <h1>Bienvenido a mi página web</h1><br>
+                <p>¡Hola! Bienvenido a mi página web. Aquí encontrarás información sobre mi trayectoria en el mundo de la programación. Mi nombre es <b>Alejandro López Arjona</b> y estoy seguro de que te despertaré interés. Puedes ver los servicios en los que trabajo y algunos ejemplos de mis trabajos. No lo dudes, si te gusta mi perfil, no dudes en contactarme en mis vías de contacto!</p>
+            </div>
+        </div>
+        
+    </main>
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

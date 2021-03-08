@@ -1,0 +1,37 @@
+$rojoOscuro: #be0123;
+$azulMarino: #03a4cf;
+$moradoOscuro: #bc1db6;
+$negroGrises: #242424;
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-family: Prata; 
+}
+
+.logos-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu-navegacion{
+    background-color: $rojoOscuro;
+}
+
+.contacto{
+    background-color: $negroGrises;
+}
+
+.menunavbar{
+    font-weight: bold;
+}
+
+.descripcion{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
