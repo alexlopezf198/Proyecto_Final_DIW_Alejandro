@@ -2,7 +2,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: Prata;
 }
 
@@ -34,11 +34,55 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: row;
-      -ms-flex: row;
-          flex: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 1.2rem;
+}
+
+.elfooter {
+  background-color: #242424;
+}
+
+.card {
+  margin: 0 auto;
+  /* Added */
+  float: none;
+  /* Added */
+  margin-bottom: 10px;
+  /* Added */
+}
+
+@media screen and (max-width: 768px) {
+  .logos-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banderas {
+    margin-bottom: 1rem;
+  }
+  .redes-sociales {
+    margin-top: 1rem;
+  }
+  .descripcion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .descripcion .texto {
+    margin-top: 1rem;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

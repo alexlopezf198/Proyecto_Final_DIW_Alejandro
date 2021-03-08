@@ -7,7 +7,7 @@ $negroGrises: #242424;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1{
+h1,h2,h3,h4{
     font-family: Prata; 
 }
 
@@ -31,7 +31,44 @@ h1{
 
 .descripcion{
     display: flex;
-    flex: row;
+    flex-direction: row;
     justify-content: space-around;
     font-size: 1.2rem;
+}
+
+.elfooter{
+    background-color: $negroGrises;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+// Pantallas pequeñas
+
+@media screen and (max-width: 768px) {
+
+    .logos-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banderas{
+        margin-bottom: 1rem;
+    }
+
+    .redes-sociales{
+        margin-top: 1rem;
+    }
+
+    .descripcion {
+      flex-direction: column;
+      .texto {
+          margin-top: 1rem;
+      }
+    }
+
 }
